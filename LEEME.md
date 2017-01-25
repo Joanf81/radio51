@@ -15,7 +15,12 @@ El backend consiste en una API de tipo REST (usando JSON para el intercambio de 
 El frontend está formado por 2 aplicaciones distintas, una aplicación de tipo MVC implementada usando el lenguaje Javascript junto con el framework AngularJS y los lenguajes HTML y CSS, apoyados con la libreria Bootstrap, para el diseño de las plantillas que forman las vistas de la aplicación. La otra es una mini aplicación simple que no utiliza ningún tipo de framework MVC y que solo tiene una pequeña interfaz diseñada en HTML+CSS+Bootstrap y que permite registrar nuevos usuarios de forma dinámica usando la tecnología AJAX mediante la libreria JQuery.
 
 ##Modelo de datos
-El modelo de datos consiste en 3 entidades distintas interrelacionadas.
+El modelo de datos consiste en 3 entidades distintas (Artista, Cancion y Comentario) relacionadas de la siguiente forma:  
+*Un Artista puede tener (0,N) canciones.
+*Una canción debe pertenecer a un y solo un Artista.
+*Un Artista puede tener (0,N) comentarios.
+*Una canción puede tener (0,N) comentarios.
+*Un comentario deber pertenecer a una Canción o a un Artista, pero no puede pertenecer a los 2 al mismo tiempo.
 
 ##Sistema de autentificación
 Para la autenticación y el mantenimiento de las sesiones de los usuarios de la aplicación se ha usado un sistema de autentificación basado en Tokens, concretamente el estándar JSON Web Token (JWT).
@@ -50,3 +55,6 @@ y podremos acceder a las 2 aplicaciones diferentes integradas en el frontend med
  `http://localhost:8080/no-angular/index --> No MVC Framework Aplication`  
 
 ##Aplicación probada en...
+##Bibliografia y tecnologias usadas
+##Autor
+##Licencia
