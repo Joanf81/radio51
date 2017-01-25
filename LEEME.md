@@ -9,7 +9,7 @@ Para el desarrollo de la aplicación se ha usado una combinación de varias tecn
 La estructura de la aplicación está dividida en 2 partes.
 
 ###Backend
-El backend consiste en una API de tipo REST implementada usando el lenguaje Javascript bajo la plataforma Node.JS y apoyandose sobre el framework Express para la capa REST, Sequelize como ORM y SQLite3 como motor de persistencia de datos. Dicha API está dividida en varios módulos utilizando el mecanismo "routing modular" e implementa una autentificación de tipo JSON Web Token para los usuarios. 
+El backend consiste en una API de tipo REST (usando JSON para el intercambio de datos) implementada usando el lenguaje Javascript bajo la plataforma Node.JS y apoyandose sobre el framework Express para la capa REST, Sequelize como ORM y SQLite3 como motor de persistencia de datos. Dicha API está dividida en varios módulos utilizando el mecanismo "routing modular" e implementa una autentificación de tipo JSON Web Token para los usuarios. 
 
 ###Frontend
 El frontend está formado por 2 aplicaciones distintas, una aplicación de tipo MVC implementada usando el lenguaje Javascript junto con el framework AngularJS y los lenguajes HTML y CSS, apoyados con la libreria Bootstrap, para el diseño de las plantillas que forman las vistas de la aplicación. La otra es una mini aplicación simple que no utiliza ningún tipo de framework MVC y que solo tiene una pequeña interfaz diseñada en HTML+CSS+Bootstrap y que permite registrar nuevos usuarios de forma dinámica usando la tecnología AJAX mediante la libreria JQuery.
@@ -19,4 +19,18 @@ El modelo de datos consiste en 3 entidades distintas interrelacionadas.
 
 ------ AQUI FALTAN COSAS!!!!!
 
-##Seguridad 
+##Sistema de autentificación
+Para la autenticación y el mantenimiento de las sesiones de los usuarios de la aplicación se ha usado un sistema de autentificación basado en Tokens, concretamente el estándar JSON Web Token (JWT).
+
+##Despliegue de la aplicación
+Para el correcto despliegue de la aplicación son necesarias las siguientes dependecias: Node, npm, git, bower.
+
+####Instalación de las dependecias en Ubuntu Linux:
+Para instalar las dependecias desde el repositorio de Ubuntu puedes usar los siguientes comandos:
+---
+$sudo apt-get install curl  #if curl is not installed
+$curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+$sudo apt-get install -y nodejs  #install node and npm
+$sudo apt-get install git #install git
+$npm install -g bower
+---
