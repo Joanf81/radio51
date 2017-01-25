@@ -35,19 +35,18 @@ Para instalar las dependecias desde el repositorio de Ubuntu puedes usar los sig
 ###Instalación de las librerias externas necesarias en Linux
 Esta aplicación usa, tanto en el backend como en el frontend, varias dependencias y librerias externas. Cada parte de la aplicación utiliza un gestor de dependencias distinto, npm para el backend en Node y bower para el frontend en Angular, por lo que antes de lanzar la aplicación es imprescindible instalar dichas librerias y dependecias ejecutando los siguientes comandos desde el directorio raiz del proyecto:
 
- `$npm install`
- `$cd public`
- `$bower install`
+ `$npm install`  
+ `$cd public`  
+ `$bower install`  
 
 ###Lanzamiento de la aplicación
 Una vez instaladas todas las plataformas, dependencias y librerias externas ya podemos desplegar completamente la aplicación mediante el siguiente comando:
----
-$node index
----
+
+ `$node index`  
+
 y podremos acceder a las 2 aplicaciones diferentes integradas en el frontend mediante nuestro navegador web, a traves de las siguientes URLs:
----
-http://localhost:8080/# --> Angular aplication
-http://localhost:8080/no-angular/index --> No MVC Framework Aplication
----
+
+ `http://localhost:8080/# --> Angular aplication`  
+ `http://localhost:8080/no-angular/index --> No MVC Framework Aplication`  
 
 ##Aplicación probada en...
