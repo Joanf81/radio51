@@ -16,11 +16,11 @@ El frontend está formado por 2 aplicaciones distintas, una aplicación de tipo 
 
 ##Modelo de datos
 El modelo de datos consiste en 3 entidades distintas (Artista, Cancion y Comentario) relacionadas de la siguiente forma:  
-*Un Artista puede tener (0,N) canciones.
-*Una canción debe pertenecer a un y solo un Artista.
-*Un Artista puede tener (0,N) comentarios.
-*Una canción puede tener (0,N) comentarios.
-*Un comentario deber pertenecer a una Canción o a un Artista, pero no puede pertenecer a los 2 al mismo tiempo.
+ * Un Artista puede tener (0,N) canciones.  
+ * Una canción debe pertenecer a un y solo un Artista.  
+ * Un Artista puede tener (0,N) comentarios.  
+ * Una canción puede tener (0,N) comentarios.  
+ * Un comentario deber pertenecer a una Canción o a un Artista, pero no puede pertenecer a los 2 al mismo tiempo.  
 
 ##Sistema de autentificación
 Para la autenticación y el mantenimiento de las sesiones de los usuarios de la aplicación se ha usado un sistema de autentificación basado en Tokens, concretamente el estándar JSON Web Token (JWT).
