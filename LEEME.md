@@ -17,8 +17,6 @@ El frontend está formado por 2 aplicaciones distintas, una aplicación de tipo 
 ##Modelo de datos
 El modelo de datos consiste en 3 entidades distintas interrelacionadas.
 
------- AQUI FALTAN COSAS!!!!!
-
 ##Sistema de autentificación
 Para la autenticación y el mantenimiento de las sesiones de los usuarios de la aplicación se ha usado un sistema de autentificación basado en Tokens, concretamente el estándar JSON Web Token (JWT).
 
@@ -26,22 +24,19 @@ Para la autenticación y el mantenimiento de las sesiones de los usuarios de la 
 Para el correcto despliegue de la aplicación son necesarias las siguientes dependecias: Node, npm, git, bower.
 
 ###Instalación de las dependecias en Ubuntu Linux
-Para instalar las dependecias desde el repositorio de Ubuntu puedes usar los siguientes comandos:
----
-$sudo apt-get install curl #if curl is not installed  
-$curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -  
-$sudo apt-get install -y nodejs #install node and npm  
-$sudo apt-get install git #install git  
-$npm install -g bower #install bower
----
+Para instalar las dependecias desde el repositorio de Ubuntu puedes usar los siguientes comandos.  
+sudo apt-get install curl #if curl is not installed  
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -  
+sudo apt-get install -y nodejs #install node and npm  
+sudo apt-get install git #install git  
+npm install -g bower #install bower
 
 ###Instalación de las librerias externas necesarias en Linux
 Esta aplicación usa, tanto en el backend como en el frontend, varias dependencias y librerias externas. Cada parte de la aplicación utiliza un gestor de dependencias distinto, npm para el backend en Node y bower para el frontend en Angular, por lo que antes de lanzar la aplicación es imprescindible instalar dichas librerias y dependecias ejecutando los siguientes comandos desde el directorio raiz del proyecto:
----
-$npm install
-$cd public
-$bower install
----
+
+npm install
+cd public
+bower install
 
 ###Lanzamiento de la aplicación
 Una vez instaladas todas las plataformas, dependencias y librerias externas ya podemos desplegar completamente la aplicación mediante el siguiente comando:
