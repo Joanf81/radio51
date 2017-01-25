@@ -1,0 +1,71 @@
+<link href="css/tarjeta-cancion-modificar.css" rel="stylesheet">
+<br>
+<br>
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-10 tarjeta-cancion-modificar">
+		<br>
+		<div class="row">
+		    <div class="col-xs-12">
+		   		<center>
+		   			<h1>Modificar canción {{titulo}}</h1>
+		   		</center>
+		    </div>
+		</div>
+		<br>
+		<br>
+		<form name="formularioModificarCancion" class="form-modificacion" role="modificacion">
+		    <div class="form-group">
+		    	<div class="row">
+		    		<div class="col-xs-6">
+		        		<input type="text" id="titulo" name="titulo" class="form-control campo-texto" placeholder="Titulo de la canción" ng-model="cancion.titulo" required>
+		        	</div>
+		        	<div class="col-xs-6">
+		        		<input type="text" id="album" name="album" class="form-control campo-texto" placeholder="Album al que pertenece" ng-model="cancion.album">
+		        	</div>
+		        </div>
+
+		        <div class="row">
+		    		<div class="col-xs-6">
+		        		<input type="text" id="genero" name="genero" class="form-control campo-texto" placeholder="Género musical" ng-model="cancion.genero">
+		        	</div>
+		        	<div class="col-xs-6">
+		        		<input type="text" id="duracion" name="duracion" class="form-control campo-texto" placeholder="Duración en minutos" ng-model="cancion.duracion">
+		        	</div>
+		        </div>
+
+		        <div class="row">
+		        	<div class="col-xs-6">
+		        		<input type="text" id="fecha_lanzamiento" name="fecha_lanzamiento" class="form-control campo-texto" placeholder="Fecha de lanzamiento" ng-model="cancion.fecha_lanzamiento">
+		        	</div>
+		        	<div class="col-xs-6">
+		        	</div>
+		        </div>
+		        <br>
+
+		        <div class="row">
+		        	<div class="col-xs-12">
+		        		<input type="text" id="imagen" name="imagen" class="form-control campo-texto" placeholder="URL de la imagen de portada" ng-model="cancion.imagen">
+		        	</div>
+		        </div>
+
+		        <div class="row">
+		        	<div class="col-xs-12">
+		        		<input type="text" id="link_souncloud" name="link_souncloud" class="form-control campo-texto" placeholder="URL de la cancion en souncloud" ng-model="cancion.link_souncloud">
+		        	</div>
+		        </div>
+
+		        <div class="row">
+		       		<div class="col-xs-12">
+		        		<center>
+		        			<button class="boton btn btn-default" type="button" ng-click='modificar()' ng-href='#here'>Modificar canción</button>
+		        		</center>
+		        	</div>
+		        </div>
+		 
+		    </div>
+		 </form>
+	</div>
+	<div class="col-xs-1"></div>
+</div>
+<br><br><br>

@@ -1,0 +1,173 @@
+<link href="css/tarjeta-pagina-inicio.css" rel="stylesheet">
+<br><br>
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-10 tarjeta-pagina-inicio">
+		<div class="row">
+			<div class="col-xs-12 encabezado">
+				<center><h1>Práctica 5: Aplicaciones web en el lado del cliente </h1></center>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-1"></div>
+			<div class="col-xs-10">
+				<br>
+				<br>
+				<h3> Casos de uso con Angular: </h3>
+				<p>Aplicación angular alojada en el directorio public</p>
+				<br>
+				<ol>
+					<li>
+						Cualquier visitante podrá registrar en cualquier momento un artista nuevo (que representa un usuario de la aplicación).
+						<ul>
+							<li>Ruta API Rest: POST /artista </li>
+							<li>Ruta Angular: <a href="#/registro"> #/registro </a></li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Cualquier visitante podrá acceder al perfil de un artisto, pudiendo ver todos sus datos escepto su contraseña.
+						<ul>
+							<li>Ruta API Rest: GET /artista/:id </li>
+							<li>Ruta Angular: <a href="#/artista/1"> #/artista/:idArtista </a></li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Cualquier visitante podrá acceder al perfil de datos de una canción, pudiendo ver todos sus datos.
+						<ul>
+							<li>Ruta API Rest: GET /cancion/:id </li>
+							<li>Ruta Angular: <a href="#/cancion/1"> #/cancion/:idCancion </a></li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Cualquier visitante podrá obtener un listado paginado de todos los artistas almacenados en el sistema, en cada resultado aparecerá el numero de página que se está devolviendo, el número total de páginas y una coleccion de de artistas del tamaño indicado en la URL. (no se devuelve ni sus canciones ni comentarios, ya que no se mostraran en la plantilla de lista de artistas)
+						<ul>
+							<li>Ruta API Rest: GET /artista/pagina/:num_pagina/:limit </li>
+							<li>Ruta Angular: <a href="#/artistas"> #/artistas </a></li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Cualquier visitante podrá obtener un listado paginado de todas las canciones almacenadas en el sistema, en cada resultado aparecerá el numero de página que se está devolviendo, el número total de páginas y una coleccion de de artistas del tamaño indicado en la URL. (no se devuelve ni sus canciones ni comentarios, ya que no se mostraran en la plantilla de lista de artistas)
+						<ul>
+							<li>Ruta API Rest: GET /cancion/pagina/:num_pagina/:limit </li>
+							<li>Ruta Angular: <a href="#/canciones"> #/canciones </a></li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Cualquier visitante podrá obtener un listado paginado de todas las canciones de un artista almacenadas en el sistema, en cada resultado aparecerá el numero de página que se está devolviendo, el número total de páginas y una coleccion de de artistas del tamaño indicado en la URL. (no se devuelven sus comentarios, ya que no se mostraran en la plantilla de lista de canciones)
+						<ul>
+							<li>Ruta API Rest: GET /artista/:id/canciones/pagina/:num_pagina/:limit </li>
+							<li>Ruta Angular: <a href="#/artista/1/canciones"> #/artista/:idArtista/canciones </a></li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Cualquier visitante podrá obtener un listado paginado de todos los comentarios de un artista o de una canción almacenados en el sistema, en cada resultado aparecerá el numero de página que se está devolviendo, el número total de páginas y una coleccion de de artistas del tamaño indicado en la URL.
+						<ul>
+							<li>Ruta API Rest Artista: GET /artista/:id/comentarios/pagina/:num_pagina/:limit </li>
+							<li>Ruta API Rest Cancion: GET /cancion/:id/comentarios/pagina/:num_pagina/:limit </li>
+							<li>Ruta Angular Artista: <a href="#/artista/1"> #/artista/:idArtista</a> (Los comentarios se ven en el perfil)</li>
+							<li>Ruta Angular Artista: <a href="#/cancion/1"> #/cancion/:idCancion</a> (Los comentarios se ven en el perfil)</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Cualquier visitante podrá añadir un nuevo comentario a un artista o a una canción.
+						<ul>
+							<li>Ruta API Rest Artista: POST /artista/:id/comentar </li>
+							<li>Ruta API Rest Cancion: POST /cancion/:id/comentar </li>
+							<li>Ruta Angular Artista: <a href="#/artista/1"> #/artista/:idArtista</a> (Los comentarios añaden desde el perfil)</li>
+							<li>Ruta Angular Artista: <a href="#/cancion/1"> #/cancion/:idCancion</a> (Los comentarios añaden desde el perfil)</li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Cualquier visitante podrá loguearse en cualquier momento como un artista siempre que conozca su nombre de usuario y contraseña.
+						<ul>
+							<li>Ruta API Rest: POST /autentificacion </li>
+							<li>Ruta Angular: El formulario de login se encuentra en la barra superior del menú. </li>
+							<li>Datos de logueo para probar la aplicación</li>
+							<ul>
+								<li>User: TheDoors</li>
+								<li>Pass: TheDoors</li>
+							</ul>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Un artista logueado podrá crear una canción, la cancion creada se guardará como propiedad del artista logueado, no se pueden crear canciones en otros artistas y la propiedad de la cancion no se puede modificar. (Se debe mandar en token de autorizacion en la cabecera)
+						<ul>
+							<li>Ruta API Rest: POST /cancion </li>
+							<li>Ruta Angular: <a href="#/publicar-cancion"> #/publicar-cancion </a> </li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Un artista logueado podrá modificar una canción siempre y cuando sea de su propiedad. (Se debe mandar en token de autorizacion en la cabecera)
+						<ul>
+							<li>Ruta API Rest: PUT /cancion/:id </li>
+							<li>Ruta Angular: <a href="#/modificar-cancion/1"> #/modificar-cancion/:idCancion </a> </li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Un artista logueado podrá eliminar una canción siempre y cuando sea de su propiedad. (Se debe mandar en token de autorizacion en la cabecera)
+						<ul>
+							<li>Ruta API Rest: DELETE /cancion/:id </li>
+							<li>Ruta Angular: <a href="#/eliminar-cancion/1"> #/eliminar-cancion/:idCancion </a> </li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Un artista logueado podrá modificar sus propios datos, pero no los de otro artista. (Se debe mandar en token de autorizacion en la cabecera)
+						<ul>
+							<li>Ruta API Rest: PUT /artista/:id </li>
+							<li>Ruta Angular: <a href="#/modificar-perfil"> #/modificar-perfil </a> </li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Un artista logueado podrá darse de baja a si mismo, pero no eliminar otros artistas. (Se debe mandar en token de autorizacion en la cabecera)
+						<ul>
+							<li>Ruta API Rest: DELETE /artista/:id </li>
+							<li>Ruta Angular: <a href="#/baja"> #/baja </a> </li>
+						</ul>
+					</li>
+					<br>
+				</ol>
+				<br>
+				<br>
+				<h3> Casos de uso sin frameworks MCV: </h3>
+				<p>Para implementar este apartado he creado una mini aplicación que permite crear y ver artistas de forma rapida.</p>
+				<p>Aplicación alojada en el directorio views</p>
+				<ol>
+					<li>
+						Cualquier visitante podrá obtener un listado paginado de todos los artistas almacenados en el sistema, en cada resultado aparecerá el numero de página que se está devolviendo, el número total de páginas y una coleccion de de artistas del tamaño indicado en la URL. (no se devuelve ni sus canciones ni comentarios, ya que no se mostraran en la plantilla de lista de artistas)
+						<ul>
+							<li>Ruta API Rest: GET /artista/pagina/:num_pagina/:limit </li>
+							<li>Ruta a la vista: <a href="/no-angular/index"> /no-angular/index </a></li>
+						</ul>
+					</li>
+					<br>
+					<li>
+						Cualquier visitante podrá registrar en cualquier momento un artista nuevo (que representa un usuario de la aplicación).
+						<ul>
+							<li>Ruta API Rest: POST /artista </li>
+							<li>Ruta a la vista: <a href="/no-angular/index"> /no-angular/index </a> (Se hace en la misma pantalla que el caso anterior)</li>
+						</ul>
+					</li>
+					<br>
+				</ol>
+			</div>
+			<div class="col-xs-1"></div>
+		</div>
+	</div>
+	<div class="col-xs-1"></div>
+</div>
+<br>
+<br>
+<br>

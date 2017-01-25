@@ -1,0 +1,89 @@
+<link href="css/tarjeta-artista-registro.css" rel="stylesheet">
+<br>
+<br>
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-10 tarjeta-artista-registro">
+		<br>
+		<div class="row">
+		    <div class="col-xs-12">
+		   		<center>
+		   			<h1>Formulario de registro</h1>
+		   		</center>
+		    </div>
+		</div>
+		<br>
+		<br>
+		<form name="formularioRegistroArtista" class="form-registro" role="registro">
+		    <div class="form-group">
+		    	<div class="row">
+		    		<div class="col-xs-6">
+		        		<input type="text" id="usuario" name="usuario" class="form-control campo-texto" placeholder="Nombre de usuario" ng-model="usuario" required>
+		        	</div>
+		        	<div class="col-xs-6">
+		        		<input type="text" id="email" name="email" class="form-control campo-texto" placeholder="Correo electrónico" ng-model="email" required>
+		        	</div>
+		        </div>
+
+		        <div class="row">
+		        	<div class="col-xs-6">
+		        		<input type="password" id="pass" name="pass" class="form-control campo-texto" placeholder="Contraseña" ng-model="pass" required>
+		        	</div>
+		        	<div class="col-xs-6">
+		        	</div>
+		        </div>
+
+		        <div class="row">
+		        	<div class="col-xs-6">
+		        		<input type="text" id="nombre_artistico" name="nombre_artistico" class="form-control campo-texto" placeholder="Nombre Artistico" ng-model="nombre_artistico">
+		        	</div>
+		        	<div class="col-xs-6">
+		        	</div>
+		        </div>
+
+		         <div class="row">
+		        	<div class="col-xs-6">
+		        		<input type="text" id="nombre" name="nombre" class="form-control campo-texto" placeholder="Nombre real" ng-model="nombre">
+		        	</div>
+		        	<div class="col-xs-6">
+		        		<input type="text" id="apellidos" name="apellidos" class="form-control campo-texto" placeholder="Apellidos" ng-model="apellidos">
+		        	</div>
+		        </div>
+
+		        <div class="row">
+		        	<div class="col-xs-6">
+		        		<input type="text" id="imagen" name="imagen" class="form-control campo-texto" placeholder="URL imagen de perfil" ng-model="imagen">
+		        	</div>
+		        	<div class="col-xs-6">
+		        		<input type="text" id="fecha_nacimiento" name="fecha_nacimiento" class="form-control campo-texto" placeholder="Fecha de nacimiento"  ng-model="fecha_nacimiento">
+		        	</div>
+		        </div>
+		       
+		       	<div class="row">
+		       		<div class="col-xs-12">
+		        		<textarea rows="4" cols="50" id="descripcion_corta" name="descripcion_corta" class="form-control area-texto" placeholder="Descripción corta" ng-model="descripcion_corta">
+		        		</textarea>
+		        	</div>
+		        </div>
+
+		        <div class="row">
+		       		<div class="col-xs-12">
+		        		<textarea rows="12" cols="50" id="descripcion_larga" name="descripcion_larga" class="form-control area-texto" placeholder="Descripción Larga" ng-model="descripcion_larga">
+		        		</textarea>
+		        	</div>
+		        </div>
+
+		        <div class="row">
+		       		<div class="col-xs-12">
+		        		<center>
+		        			<button class="boton btn btn-default" type="button" ng-click='registro()' ng-href='#here'>Registrarme</button>
+		        		</center>
+		        	</div>
+		        </div>
+		 
+		    </div>
+		 </form>
+	</div>
+	<div class="col-xs-1"></div>
+</div>
+<br><br><br>

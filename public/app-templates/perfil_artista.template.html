@@ -1,0 +1,146 @@
+<link href="css/tarjeta-artista-perfil.css" rel="stylesheet">
+<link href="css/tarjeta-comentario.css" rel="stylesheet">
+<br><br>
+<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10 tarjeta-artista-perfil">
+			<div class="row encabezado">
+				<div class="col-xs-12">
+					<center><h1 class="opaco">{{artista.nombre_artistico}}</h1></center>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-xs-3">
+					<img src="{{artista.imagen}}" class="img-responsive imagen-perfil" alt="foto_perfil_{{artista.usuario}}" />
+				</div>
+				<div class="col-xs-1"></div>
+				<div class="col-xs-3">
+					<p>Nombre: {{artista.nombre}}</p>
+					<p>Apellidos: {{artista.apellidos}}</p>
+					<p>Fecha de nacimiento: {{artista.fecha_nacimiento}}</p>
+					<p>Contacto: <a href="{{artista.email}}">{{artista.email}}</a></p>
+					<br>
+					<p><h4><a href="#/artista/{{artista.id}}/canciones">Ver canciones</a></h4></p>
+				</div>	
+				<div class="col-xs-4">
+					<p>{{artista.descripcion_corta}}</p>
+				</div>
+				<div class="col-xs-1"></div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-xs-12">
+					<p>{{artista.descripcion_larga}}</p>
+				</div>
+			</div>
+			<br>
+			<div class="row comentarios">
+				<br>
+				<div class="row cabecera">
+					<div class="col-xs-12"><center><h3>Comentarios</h3></center></div>
+				</div>
+				<div class="row">
+				<br>
+
+					<div ng-repeat="comentario in comentarios">
+						<div class="col-xs-6">
+							<div class="col-xs-1"></div>
+							<div class="col-xs-10 tarjeta-comentario">
+								<div class="row encabezado">
+									<div class="col-xs-6">
+										<h4>{{comentario.autor}}</h4>
+									</div>
+									<div class="col-xs-6">
+										<h4>{{comentario.fecha_publicacion}}</h4>
+									</div>
+								</div>
+								<div class="row contenido">
+									<div class="col-xs-12">
+										<br>
+										<p>{{comentario.contenido}}</p>
+										<br>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-1"></div>
+						</div>
+					</div>
+
+				</div>
+				<br>
+				<br>
+				<div class="row pie">
+					<div class="col-xs-6">
+						<center>
+							<h4>
+								<a ng-click="primeraPagina()"> Primera página </a>
+								...
+								<a ng-click="anteriorPagina(2)" ng-show="(pagina_actual - 2) > 0"> {{pagina_actual - 2}} </a>
+								<a ng-click="anteriorPagina(1)" ng-show="(pagina_actual - 1) > 0"> {{pagina_actual - 1}} </a>
+								{{pagina_actual}}
+								<a ng-click="siguientePagina(1)" ng-show="(pagina_actual + 1) <= pagina_ultima"> {{pagina_actual + 1}} </a>
+								<a ng-click="anteriorPagina(2)" ng-show="(pagina_actual + 2) <= pagina_ultima"> {{pagina_actual + 2}} </a>
+								...
+								<a ng-click="ultimaPagina(2)"> Última página </a>
+							</h4>
+						</center>
+					</div>
+					<div class="col-xs-6">
+						<div class="row">
+							<div class="col-xs-6">
+								<h4>
+									<p align="right">Comentarios por página: </p> 
+								</h4>
+							</div>
+							<div class="col-xs-2">
+								<input size="4" type="text" id="comentarios_por_pagina" name="comentarios_por_pagina_form" class="form-control campo-texto" ng-model="comentarios_por_pagina">
+							</div>
+							<div class="col-xs-4">
+								<button class="boton btn btn-default" type="button" ng-click='primeraPagina()' ng-href='#here'>Ir</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row comentar">
+				<br>
+				<div class="row cabecera">
+					<div class="col-xs-12"><center><h3>Comentar</h3></center></div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-3"></div>
+					<div class="col-xs-3">
+						<input type="text" id="autor_comentario" name="autor_comentario" class="form-control campo-texto" placeholder="Tu nombre" ng-model="autor_comentario">
+		        	</div>
+		        	<div class="col-xs-6"></div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-3"></div>
+					<div class="col-xs-6">
+						<textarea rows="4" cols="50" id="contenido_comentario" name="contenido_comentario" class="form-control area-texto" placeholder="Escribe aquí tu comentario..." ng-model="contenido_comentario">
+		        		</textarea>
+					</div>
+					<div class="col-xs-3"></div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-12">
+		        		<center>
+		        			<button class="boton btn btn-default" type="button" ng-click='comentar(artista.id)' ng-href='#here'>Comentar</button>
+		        		</center>
+		        	</div>
+		        </div>
+				<br>
+				<br>
+			</div>
+		</div>
+		<div class="col-sm-1 col-xs-0"></div>
+		</div>
+</div>
+<br>
+<br>
+<br>

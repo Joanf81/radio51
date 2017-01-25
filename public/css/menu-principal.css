@@ -1,0 +1,295 @@
+
+body {
+    background-color: #090909;
+    padding-top: 50px;
+}
+
+
+
+/*************** PÁGINMA PRINCIPAL *******************/
+
+#wrapper {
+    width: 100%;
+}
+
+#page-wrapper {
+    padding: 0 15px;
+    min-height: 568px;
+    /*background-color: #111111;*/
+    background-image:url("fondo_radioactivo.jpg");
+    background-repeat:repeat;
+    color: #CCCCCC;
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        padding: 0 30px;
+        /*border-left: 1px solid #4A58D5;*/
+        border-left: 0.5px solid #242424;
+    }
+}
+
+
+
+/*************** MENÚ *******************/
+
+.navbar {
+    background-color: #050505;
+    /*border-bottom: 1px solid #4A58D5;*/
+    border-bottom: 0.5px solid #242424;
+}
+
+
+
+/*************** MENÚ SUPERIOR *******************/
+
+.navbar .navbar-header .navbar-brand {
+    color: #2DD338;
+}
+
+.navbar-top-links {
+    margin-right: 0;
+}
+
+.navbar-top-links li {
+    display: inline-block;
+}
+
+.navbar-top-links li:last-child {
+    margin-right: 15px;
+}
+
+.navbar-top-links li a {
+    padding: 15px;
+    min-height: 50px;
+    color: #3A4DF4;
+}
+
+.navbar-top-links .dropdown-menu li {
+    display: block;
+}
+
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-top-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+}
+
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal;
+}
+
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+}
+
+
+
+
+
+
+/*************** PANEL DE LOGIN DEL MENÚ SUPERIOR *******************/
+
+.menu-form-login .form-usuario {
+    background-color: #121212;  
+    border: 1.5px solid #454545;
+    margin-right: 10px;
+    color: #999999;
+}
+
+.menu-form-login .form-pass {
+    background-color: #121212;  
+    border: 1.5px solid #454545;
+    margin-right: 10px;
+    color: #999999;
+}
+
+.menu-form-login .form-pass:focus {
+    box-shadow: 0px 0px 3px 2px #4A58D5;
+}
+
+.menu-form-login .form-usuario:focus {
+    box-shadow: 0px 0px 3px 2px #4A58D5;
+}
+
+.menu-form-login .boton-login {
+    background-color: #151515;
+    border: 1.5px solid #454545;
+    margin-right: 70px; /* Cambiar a alinecacion tipo responsive */
+    color: #AAAAAA;
+}
+
+.menu-form-login .boton-login:hover {
+    background-color: #4A58D5;
+    box-shadow: 0px 0px 3px 2px #4A58D5;
+}
+
+
+
+/*************** TEXTO DEL MENÚ SUPERIOR *******************/
+
+.text-menu-superior {
+
+    padding-top: 11px; /* Cambiar a alinecacion tipo responsive */
+    padding-right: 60px; /* Cambiar a alinecacion tipo responsive */
+}
+
+.text-menu-superior a  {
+    size: 50px;
+}
+
+.text-menu-superior p {
+
+    font-size: large;
+    color: #AAAAAA;
+}
+
+.text-menu-superior p a {
+
+    color: #4A58D5;
+    margin: 0px;
+    padding: 0px
+}
+
+.text-menu-superior p a:hover {
+
+    cursor: pointer;
+}
+
+
+
+/*************** DESPLEGABLE DE USUARIO DEL MENÚ SUPERIOR *******************/
+
+.menu-superior-desplegable .desplegable-usuario {
+
+    background-color: #000000;
+}
+
+
+
+/*************** MENÚ IZQUIERDO *******************/
+
+.sidebar {
+    background-color: #050505;
+    color: #2E2EFE;
+}
+
+.sidebar a {
+    color: #3A4DF4;
+}
+
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.sidebar .sidebar-search {
+    padding: 15px;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid #2e2e2e;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2F2F2F;
+}
+
+.sidebar ul li a.active {
+    /*background-color: #ff0000;*/
+}
+
+.sidebar .arrow {
+    float: right;
+}
+
+.sidebar .fa.arrow:before {
+    content: "\f104";
+}
+
+.sidebar .active>a>.fa.arrow:before {
+    content: "\f107";
+}
+
+.sidebar .nav-second-level li,
+.sidebar .nav-third-level li {
+    border-bottom: 0!important;
+}
+
+.sidebar .nav-second-level li a {
+    padding-left: 37px;
+    background-color: #0F0F0F;
+    color: #5565F5;
+}
+
+.sidebar .nav-second-level li a: {
+    box-shadow: 0px 0px 3px 2px #4A58D5;
+    border: none;
+}
+
+
+.sidebar .nav-second-level li a:hover {
+    background-color: #1F1F1F;
+}
+
+
+.sidebar .nav-third-level li a {
+    padding-left: 52px;
+    background-color: #151515;
+    color: #6575F5;
+}
+
+.sidebar .nav-third-level li a:hover {
+    background-color: #1B1B1B;
+}
+
+@media(min-width:768px) {
+    .sidebar {
+        z-index: 1;
+        position: absolute;
+        width: 250px;
+        margin-top: 51px;
+    }
+
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+}
+
+
+
+
+/*************** BUSCADOR DEL MENÚ IQUIERDO ***************/
+
+.menu-form-buscar:hover {
+    box-shadow: 0px 0px 2px 1px #4A58D5;
+}
+
+.menu-form-buscar .form-buscar {
+    background-color: #121212;  
+    border: 1.5px solid #353535;
+    color: #999999;
+}
+
+.menu-form-buscar .form-buscar:focus {
+    box-shadow: 0px 0px 3px 2px #4A58D5;
+}
+
+.menu-form-buscar .boton-buscar {
+    background-color: #151515;
+    border: 1.5px solid #353535;
+    color: #999999;
+}
+
+.menu-form-buscar .boton-buscar:hover {
+    background-color: #4A58D5;
+    box-shadow: 0px 0px 3px 2px #4A58D5;
+}

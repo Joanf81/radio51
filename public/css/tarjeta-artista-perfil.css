@@ -1,0 +1,97 @@
+/********************* PERFIL ARTISTA ***********************/
+
+.tarjeta-artista-perfil {
+
+    background-color: rgba(10, 10, 10, 0.85);
+    box-shadow: 37px 27px 40px 2px #000000;
+    /*border: 1px solid #4A58D5;*/
+    /*box-shadow: 0px 0px 5px 1px #4A58D5; */
+}
+
+.tarjeta-artista-perfil .encabezado {
+
+    background-color: rgba(25, 25, 25, 0.95);
+    border-bottom: 0.5px solid #242424; 
+}
+
+.tarjeta-artista-perfil .imagen-perfil {
+
+    width: auto;
+    min-height: 300px;
+}
+
+.tarjeta-artista-perfil .comentarios {
+
+    border-top: 0.5px solid #242424; 
+}
+
+.tarjeta-artista-perfil .comentarios .pie .campo-texto {
+
+    background-color: #121212;  
+    border: 1.5px solid #454545;
+    margin-left: 10px;
+    color: #999999;
+
+}
+
+.tarjeta-artista-perfil .comentarios .pie .campo-texto:focus {
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}
+
+.tarjeta-artista-perfil .comentarios .pie .boton {
+
+    background-color: #151515;
+    border: 1.5px solid #454545;
+    margin-right: 70px; /* Cambiar a alinecacion tipo responsive */
+    color: #AAAAAA;
+
+}
+
+.tarjeta-artista-perfil .comentarios .pie .boton:hover {
+    background-color: #4A58D5;
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}
+
+.tarjeta-artista-perfil .comentar {
+
+    border-top: 0.5px solid #242424; 
+}
+
+.tarjeta-artista-perfil .comentar .area-texto {
+
+    background-color: #121212;  
+    border: 1.5px solid #454545;
+    margin-left: 10px;
+    color: #999999;
+}
+
+.tarjeta-artista-perfil .comentar .area-texto:focus {
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}
+
+.tarjeta-artista-perfil .comentar .campo-texto {
+
+    background-color: #121212;  
+    border: 1.5px solid #454545;
+    margin-left: 10px;
+    color: #999999;
+
+}
+
+.tarjeta-artista-perfil .comentar .campo-texto:focus {
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}
+
+.tarjeta-artista-perfil .comentar .boton {
+
+    background-color: #151515;
+    border: 1.5px solid #454545;
+    margin-right: 70px; /* Cambiar a alinecacion tipo responsive */
+    color: #AAAAAA;
+
+}
+
+.tarjeta-artista-perfil .comentar .boton:hover {
+    background-color: #4A58D5;
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}

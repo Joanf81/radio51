@@ -1,0 +1,64 @@
+
+
+
+/********************* TARJETAS DE CANCION ***********************/
+
+.tarjeta-cancion {
+
+    background-color: rgba(10, 10, 10, 0.90);
+    box-shadow: 17px 9px 20px 1px #000000;
+    border: 0.1px solid #181818;
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /*
+    border: 1px solid #4A58D5;
+    box-shadow: 0px 0px 5px 1px #4A58D5; */
+}
+
+.tarjeta-cancion .encabezado {
+
+    background-color: rgba(30, 30, 30, 0.95);
+    border-bottom: 0.5px solid #242424;
+    /*border-bottom: 1px solid #4A58D5;*/
+    
+}
+
+.tarjeta-cancion .titulo {
+
+    margin-top: 10px;
+    
+}
+
+.tarjeta-cancion .encabezado .boton {
+
+    background-color: #151515;
+    border: 1.5px solid #454545;
+    margin-right: 70px; /* Cambiar a alinecacion tipo responsive */
+    color: #AAAAAA;
+    margin-top: 8px;
+
+}
+
+.tarjeta-cancion .encabezado .boton-modificar:hover {
+    background-color: #4A58D5;
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}
+
+.tarjeta-cancion .encabezado .boton-eliminar:hover {
+    background-color: #BF2020;
+    box-shadow: 0px 0px 7px 2px #BF2020;
+}
+
+.tarjeta-cancion .pie {
+
+    background-color: rgba(20, 20, 20, 0.95);
+    border-top: 0.5px solid #242424; 
+    /*border-top: 1px solid #4A58D5;*/
+}
+
+.tarjeta-cancion .imagen-portada {
+
+    width: auto;
+    min-height: 100px;
+}

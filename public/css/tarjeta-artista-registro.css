@@ -1,0 +1,55 @@
+
+
+/*************** REGISTRO DE ARTISTA *********************/
+
+.tarjeta-artista-registro {
+
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 27px 17px 25px 2px #000000;
+}
+
+.tarjeta-artista-registro .form-registro .campo-texto {
+
+    background-color: #121212;  
+    border: 1.5px solid #454545;
+    margin-left: 10px;
+    color: #999999;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-artista-registro .form-registro .campo-texto:focus {
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}
+
+.tarjeta-artista-registro .form-registro .area-texto {
+
+    background-color: #121212;  
+    border: 1.5px solid #454545;
+    margin-left: 10px;
+    color: #999999;
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.tarjeta-artista-registro .form-registro .area-texto:focus {
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}
+
+.tarjeta-artista-registro .form-registro .boton {
+
+    background-color: #151515;
+    border: 1.5px solid #454545;
+    margin-right: 70px; /* Cambiar a alinecacion tipo responsive */
+    color: #AAAAAA;
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.tarjeta-artista-registro .form-registro .boton:hover {
+    background-color: #4A58D5;
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}

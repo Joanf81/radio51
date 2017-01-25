@@ -1,0 +1,57 @@
+
+
+/***************** TARJETAS LISTA DE CANCIONES *******************/
+
+.tarjeta-canciones-lista {
+
+    background-color: rgba(0, 0, 0, 0.70);
+    box-shadow: 17px 9px 20px 1px #000000;
+
+    margin-top: 15px;
+    margin-bottom: 20px;
+    /*
+    border: 1px solid #4A58D5;
+    box-shadow: 0px 0px 5px 1px #4A58D5; */
+}
+
+.tarjeta-canciones-lista .encabezado {
+
+    background-color: rgba(0, 0, 0, 0.95);
+    border-bottom: 0.5px solid #242424;
+    /*border-bottom: 1px solid #4A58D5;*/
+    
+}
+
+.tarjeta-canciones-lista .pie {
+
+    background-color: rgba(0, 0, 0, 0.95);
+    border-top: 0.5px solid #242424; 
+    /*border-top: 1px solid #4A58D5;*/
+}
+
+
+.tarjeta-canciones-lista .pie .campo-texto {
+
+    background-color: #121212;  
+    border: 1.5px solid #454545;
+    margin-left: 10px;
+    color: #999999;
+
+}
+
+.tarjeta-canciones-lista .pie .campo-texto:focus {
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}
+
+.tarjeta-canciones-lista .pie .boton {
+
+    background-color: #151515;
+    border: 1.5px solid #454545;
+    margin-right: 70px; /* Cambiar a alinecacion tipo responsive */
+    color: #AAAAAA;
+}
+
+.tarjeta-canciones-lista .pie .boton:hover {
+    background-color: #4A58D5;
+    box-shadow: 0px 0px 7px 2px #4A58D5;
+}

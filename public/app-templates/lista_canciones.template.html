@@ -1,0 +1,108 @@
+<link href="css/tarjeta-canciones-lista.css" rel="stylesheet">
+<link href="css/tarjeta-cancion.css" rel="stylesheet">
+<br><br>
+<div class="row">
+    <div class="col-md-1 col-sm-0"></div>
+    <div class="col-md-10 col-sm-12 tarjeta-canciones-lista">
+        <div class="row encabezado">
+            <div class="col-xs-12">
+                <center><h1>Canciones</h1></center>
+            </div>
+        </div>
+        
+        <div class="row">
+            <br>
+            <div ng-repeat='cancion in canciones'>
+                <div class="row">
+                    <div class="col-sm-1 col-xs-0"></div>
+                    <div class="col-sm-10 col-xs-12 tarjeta-cancion">
+                        <div class="row encabezado">
+                            <div class="col-xs-6">
+                                <center><h3 class="titulo">{{cancion.titulo}}</h3></center>
+                            </div>
+                            <div class="col-xs-6" ng-show="usuario.id==cancion.ArtistaId">
+                                <div class="col-xs-8"></div>
+                                <div class="col-xs-2">
+                                    <a class="boton boton-modificar btn btn-default" type="button" href="#/modificar-cancion/{{cancion.id}}">Modificar</a>
+                                </div>
+                                <div class="col-xs-2">
+                                    <a class="boton boton-eliminar btn btn-default" type="button" href="#/eliminar-cancion/{{cancion.id}}">Eliminar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img src="{{cancion.imagen}}" class="img-responsive imagen-portada" alt="foto_portada_{{cancion.id}}" />
+                            </div>
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-3">
+                                <h4>{{cancion.titulo}}</h4>
+                                <h5>{{cancion.genero}}</h5>
+                            </div>
+                            <div class="col-xs-1"></div>
+                            <div class="col-xs-4">
+                                <p>Album: {{cancion.album}}</p>
+                                <p>Duracion: {{cancion.duracion}}</p>
+                                <p>Fecha de lanzamiento: {{cancion.fecha_lanzamiento}}</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row pie">
+                            <div class="row">
+                                <div class="col-xs-1"></div>
+                                <div class="col-xs-10"><!--
+                                    <iframe width="100%" height="90" scrolling="no" frameborder="no" src="https://soundcloud.com/doorz-tribute/when-the-musics-over&amp;theme_color=FFFFFF&amp;theme_color=000000&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=false&amp;show_artwork=true"></iframe>-->
+                                </div>
+                                <div class="col-xs-1"></div>
+                            </div>
+                            <div class="row">
+                                <center><h4><a href="#/cancion/{{cancion.id}}"> Ver comentarios </a></h4></center>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 col-xs-0"></div>
+                </div>
+            </div>
+            <br>
+            <br> 
+        </div>
+
+        <div class="row pie">
+            <div class="col-xs-6">
+                <center>
+                    <h4>
+                        <a ng-click="primeraPagina()"> Primera página </a>
+                        ...
+                        <a ng-click="anteriorPagina(2)" ng-show="(pagina_actual - 2) > 0"> {{pagina_actual - 2}} </a>
+                        <a ng-click="anteriorPagina(1)" ng-show="(pagina_actual - 1) > 0"> {{pagina_actual - 1}} </a>
+                        {{pagina_actual}}
+                        <a ng-click="siguientePagina(1)" ng-show="(pagina_actual + 1) <= pagina_ultima"> {{pagina_actual + 1}} </a>
+                        <a ng-click="anteriorPagina(2)" ng-show="(pagina_actual + 2) <= pagina_ultima"> {{pagina_actual + 2}} </a>
+                        ...
+                        <a ng-click="ultimaPagina(2)"> Última página </a>
+                    </h4>
+                </center>
+            </div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h4>
+                            <p align="right">Canciones por página: </p> 
+                        </h4>
+                    </div>
+                    <div class="col-xs-2">
+                        <input size="4" type="text" id="artistas_por_pagina" name="artistas_por_pagina_form" class="form-control campo-texto" ng-model="canciones_por_pagina">
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="boton btn btn-default" type="button" ng-click='primeraPagina()' ng-href='#here'>Ir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1 col-sm-0"></div>
+</div>
+<br>
+<br>
+<br>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Artist Mini Manager</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Joan Fernández Bornay">
+
+		 <!-- Bootstrap Core CSS -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    	<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+			<div class="row">
+				<center><h2>Artist Mini Manager</h2></center>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-10">
+					<div class="row">
+						<center>
+							<table id="tabla_artistas" class="table table-striped">
+								<tr>
+									<td>#</td>
+									<td>Usuario</td>
+									<td>Email</td>
+									<td>Nombre artistico</td>
+									<td>Nombre</td>
+									<td>Apellidos</td>
+								</tr>
+								{{#pagina.contenido}}
+									<tr>
+										<td>{{id}}</td>
+										<td>{{usuario}}</td>
+										<td>{{email}}</td>
+										<td>{{nombre_artistico}}</td>
+										<td>{{nombre}}</td>
+										<td>{{apellidos}}</td>
+									</tr>
+								{{/pagina.contenido}}
+							</table>
+						</center>
+					</div>
+					<div class="row">
+						<center>
+							<a href="/no-angular/index/pag/1/5"> Primera página </a>
+							...
+							<a href="/no-angular/index/pag/{{pagina.pagina_anterior}}/5"> Anterior </a>
+							{{pagina.pagina_actual}}
+							<a href="/no-angular/index/pag/{{pagina.pagina_siguiente}}/5"> Siguiente </a>
+							...
+							<a href="/no-angular/index/pag/{{pagina.total_paginas}}/5"> Última página </a>
+						</center>
+					</div>
+				</div>
+				<div class="col-xs-1"></div>
+			</div>
+
+			<br>
+			<hr>
+			<br>
+
+			<div class="row">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-10">
+					<center><h2>Crear Nuevo artista: </h2></center>
+					<br>
+					<form name="formNuevoArtista" role="crearArtista">
+					    <div class="form-group">
+					    	<div class="row">
+					    		<div class="col-xs-6">
+					        		<input type="text" id="usuario" name="usuario" class="form-control" placeholder="*Nombre de usuario" required>
+					        	</div>
+					        	<div class="col-xs-6">
+					        		<input type="text" id="email" name="email" class="form-control" placeholder="*Correo electrónico" required>
+					        	</div>
+					        </div>
+					        <br>
+					        <div class="row">
+					        	<div class="col-xs-6">
+					        		<input type="password" id="pass" name="pass" class="form-control" placeholder="*Contraseña" required>
+					        	</div>
+					        	<div class="col-xs-6">
+					        	</div>
+					        </div>
+					        <br>
+					        <br>
+					        <div class="row">
+					        	<div class="col-xs-6">
+					        		<input type="text" id="nombre_artistico" name="nombre_artistico" class="form-control" placeholder="Nombre Artistico">
+					        	</div>
+					        	<div class="col-xs-6">
+					        	</div>
+					        </div>
+					        <br>
+					        <div class="row">
+					        	<div class="col-xs-6">
+					        		<input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre real">
+					        	</div>
+					        	<div class="col-xs-6">
+					        		<input type="text" id="apellidos" name="apellidos" class="form-control" placeholder="Apellidos">
+					        	</div>
+					        </div>
+					        <br>
+					        <div class="row">
+					        	<div class="col-xs-6">
+					        		<input type="text" id="imagen" name="imagen" class="form-control" placeholder="URL imagen de perfil">
+					        	</div>
+					        	<div class="col-xs-6">
+					        		<input type="text" id="fecha_nacimiento" name="fecha_nacimiento" class="form-control" placeholder="Fecha de nacimiento">
+					        	</div>
+					        </div>
+					       	<br>
+					       	<br>
+					       	<div class="row">
+					       		<div class="col-xs-12">
+					        		<textarea rows="4" cols="50" id="descripcion_corta" name="descripcion_corta" class="form-control" placeholder="Descripción corta">
+					        		</textarea>
+					        	</div>
+					        </div>
+					        <br>
+					        <div class="row">
+					       		<div class="col-xs-12">
+					        		<textarea rows="12" cols="50" id="descripcion_larga" name="descripcion_larga" class="form-control" placeholder="Descripción Larga">
+					        		</textarea>
+					        	</div>
+					        </div>
+					        <br>
+					        <br>
+					        <div class="row">
+					       		<div class="col-xs-12">
+					        		<center>
+					        			<button id="boton_anadir" class="btn btn-default" type="button">Añadir Artista</button>
+					        		</center>
+					        	</div>
+					        </div>
+					    </div>
+					 </form>
+				</div>
+				<div class="col-xs-1"></div>
+			</div>
+		</div>
+		<div class="col-xs-1"></div>
+	</body>
+
+	<!-- Handle Bars -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js"></script>
+	<!-- jQuery -->
+    <script src="../public/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script>
+		var nuevoArtista = function() {
+
+			if (document.getElementById('usuario').value != "" && document.getElementById('email').value != "" && document.getElementById('pass').value != "") {
+			
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', 'http://localhost:8080/artista', true);
+
+				xhr.onreadystatechange = function() {
+
+				   if (xhr.readyState==4 && xhr.status==201) {
+				      
+				      window.location.reload();
+				   }
+				}
+				var nuevoArtista = {
+					usuario: document.getElementById('usuario').value,
+					email: document.getElementById('email').value,
+					pass: document.getElementById('pass').value,
+
+					nombre_artistico: document.getElementById('nombre_artistico').value,
+					nombre: document.getElementById('nombre').value,
+					apellidos: document.getElementById('apellidos').value,
+					imagen: document.getElementById('imagen').value,
+					fecha_nacimiento: document.getElementById('fecha_nacimiento').value,
+
+					descripcion_corta: document.getElementById('descripcion_corta').value,
+					descripcion_larga: document.getElementById('descripcion_larga').value,
+				}
+
+				xhr.setRequestHeader("Content-type", "application/json")
+				xhr.send(JSON.stringify(nuevoArtista));
+
+			} else {
+
+				alert("Faltan campos obligatorios por rellenar en el formulario.")
+			}
+		}
+
+		document.getElementById('boton_anadir').addEventListener('click', nuevoArtista);
+	</script>
+</html>
+

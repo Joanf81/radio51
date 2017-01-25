@@ -1,0 +1,34 @@
+{
+  "name": "Radio51",
+  "version": "1.0",
+  "authors": [
+    "Joan Fernández Bornay"
+  ],
+  "description": "Aplicación angular para ADI",
+  "license": "Apache",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "pages",
+    "index.html",
+    "/js"
+  ],
+  "main": [
+    "css/menu-principal.css",
+    "js/menu-principal.js"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "font-awesome": "~4.2.0",
+    "metisMenu": "~1.1.3",
+    "morrisjs": "~0.5.1",
+    "bootstrap-social": "~4.8.0",
+    "angular-local-storage": "~0.2.3",
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "ng-storage": "~0.4.2"
+  }
+}
