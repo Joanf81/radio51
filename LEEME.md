@@ -67,7 +67,7 @@ Usando las dependencias anteriores en las siguientes versiones:
  La interfaz de la aplicación ha sido testada correctamente en el navegador:  
   `Mozilla Firefox v46.0 for Ubuntu`  
   
-##Bibliografia y tecnologias usadas
+##Tecnologías usadas
 
 Javascript http://www.w3schools.com/js/  
 HTML http://www.w3schools.com/html/  
