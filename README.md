@@ -54,8 +54,46 @@ Then, we can acces the two applications using our web navigator, through the nex
  `http://localhost:8080/# --> Angular aplication`  
  `http://localhost:8080/no-angular/index --> No MVC Framework Aplication`  
 
-##Aplicación probada en...
-Esta aplicación ha sido testeada correctamente en el siguiente sistema:  
+
+##Application tested in...
+This application has been correctly tested in the next system:  
  `Ubuntu Linux 14.04.4 LTS`  
+  
+Using the next versions of the dependecies:  
+ `Node v7.4.2`  
+ `npm v2.15.11`  
+ `git v1.9.1`  
+ `bower v1.8.0`  
  
-Usando las dependencias anteriores en las siguientes versiones:  
+ The application's interface has been tested correctly in the next web browser:
+  `Mozilla Firefox v46.0 for Ubuntu`  
+  
+##Used tecnologies
+
+Javascript http://www.w3schools.com/js/  
+HTML http://www.w3schools.com/html/  
+CSS3 http://www.w3schools.com/css/css3_intro.asp  
+SQL http://www.w3schools.com/sql/sql_intro.asp  
+JSON http://www.w3schools.com/js/js_json_intro.asp  
+  
+REST https://www.w3.org/2001/sw/wiki/REST  
+Model–view–controller (MVC) https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller  
+Javascript Web Token (JWT) https://jwt.io/  
+AJAX http://www.w3schools.com/xml/ajax_intro.asp  
+  
+Node.JS https://nodejs.org/  
+Express http://expressjs.com/  
+Sequelize http://docs.sequelizejs.com/en/v3/  
+AngularJS https://angularjs.org/  
+JQuery https://jquery.com/  
+Bootstrap http://getbootstrap.com/  
+  
+SQLite3 https://sqlite.org/  
+  
+npm https://www.npmjs.com/  
+bower https://bower.io/  
+  
+Mozilla firefox https://www.mozilla.org/en-GB/firefox/new/  
+  
+##Author
+Application completly developed by Joan Fernández Bornay.
