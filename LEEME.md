@@ -55,6 +55,18 @@ y podremos acceder a las 2 aplicaciones diferentes integradas en el frontend med
  `http://localhost:8080/no-angular/index --> No MVC Framework Aplication`  
 
 ##Aplicación probada en...
+Esta aplicación ha sido testeada correctamente en el siguiente sistema:  
+ `Ubuntu Linux 14.04.4 LTS`  
+ 
+Usando las dependencias anteriores en las siguientes versiones: 
+ `Node v7.4.2`  
+ `npm v2.15.11`  
+ `git v1.9.1`  
+ `bower v1.8.0`  
+ 
+ La interfaz de la aplicación ha sido testada correctamente en el navegador:  
+  `Mozilla Firefox v46.0 for Ubuntu`  
+  
 ##Bibliografia y tecnologias usadas
 ##Autor
 ##Licencia
