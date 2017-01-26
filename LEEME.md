@@ -95,4 +95,4 @@ bower https://bower.io/
 Mozilla firefox https://www.mozilla.org/en-GB/firefox/new/  
   
 ##Autor
-Aplicación desarrollada completamente por Joan Fernández Bornay, guiado por el profesor Otto Colomina Pardo.
+Aplicación desarrollada completamente por Joan Fernández Bornay.
