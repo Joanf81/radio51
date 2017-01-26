@@ -72,10 +72,12 @@ Usando las dependencias anteriores en las siguientes versiones:
 Javascript http://www.w3schools.com/js/  
 HTML http://www.w3schools.com/html/  
 CSS3 http://www.w3schools.com/css/css3_intro.asp  
+SQL http://www.w3schools.com/sql/sql_intro.asp  
 JSON http://www.w3schools.com/js/js_json_intro.asp  
   
 REST https://www.w3.org/2001/sw/wiki/REST  
 Model–view–controller (MVC) https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller  
+Javascript Web Token (JWT) https://jwt.io/  
 AJAX http://www.w3schools.com/xml/ajax_intro.asp  
   
 Node.JS https://nodejs.org/  
@@ -86,6 +88,9 @@ JQuery https://jquery.com/
 Bootstrap http://getbootstrap.com/  
   
 SQLite3 https://sqlite.org/  
+  
+npm https://www.npmjs.com/  
+bower https://bower.io/  
   
 Mozilla firefox https://www.mozilla.org/en-GB/firefox/new/  
   
