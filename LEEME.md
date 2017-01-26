@@ -58,7 +58,7 @@ y podremos acceder a las 2 aplicaciones diferentes integradas en el frontend med
 Esta aplicación ha sido testeada correctamente en el siguiente sistema:  
  `Ubuntu Linux 14.04.4 LTS`  
  
-Usando las dependencias anteriores en las siguientes versiones: 
+Usando las dependencias anteriores en las siguientes versiones:  
  `Node v7.4.2`  
  `npm v2.15.11`  
  `git v1.9.1`  
@@ -68,5 +68,26 @@ Usando las dependencias anteriores en las siguientes versiones:
   `Mozilla Firefox v46.0 for Ubuntu`  
   
 ##Bibliografia y tecnologias usadas
+
+Javascript http://www.w3schools.com/js/  
+HTML http://www.w3schools.com/html/  
+CSS3 http://www.w3schools.com/css/css3_intro.asp  
+JSON http://www.w3schools.com/js/js_json_intro.asp  
+  
+REST https://www.w3.org/2001/sw/wiki/REST  
+Model–view–controller (MVC) https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller  
+AJAX http://www.w3schools.com/xml/ajax_intro.asp  
+  
+Node.JS https://nodejs.org/  
+Express http://expressjs.com/  
+Sequelize http://docs.sequelizejs.com/en/v3/  
+AngularJS https://angularjs.org/  
+JQuery https://jquery.com/  
+Bootstrap http://getbootstrap.com/  
+  
+SQLite3 https://sqlite.org/  
+  
+Mozilla firefox https://www.mozilla.org/en-GB/firefox/new/  
+  
 ##Autor
-##Licencia
+Aplicación desarrollada completamente por Joan Fernández Bornay, guiado por el profesor Otto Colomina Pardo.
