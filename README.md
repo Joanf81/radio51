@@ -65,7 +65,7 @@ Using the next versions of the dependecies:
  `git v1.9.1`  
  `bower v1.8.0`  
  
- The application's interface has been tested correctly in the next web browser:
+ The application's interface has been tested correctly in the next web browser:  
   `Mozilla Firefox v46.0 for Ubuntu`  
   
 ##Used tecnologies
